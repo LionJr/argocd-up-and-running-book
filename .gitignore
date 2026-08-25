@@ -1,0 +1,29 @@
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Kubernetes / Helm
+*.tgz
+charts/
+kubeconfig
+*.kubeconfig
+
+# Secrets and local overrides
+*.local
+*.env
+.env
+secrets.yaml
+*-secret.yaml
+
+# Logs and temp files
+*.log
+tmp/
+temp/
