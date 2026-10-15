@@ -20,7 +20,8 @@ spec:
         app: golist-api
     spec:
       containers:
-        - image: quay.io/christianh814/golist-api:latest
+        - image: golist-api:local-arm64
+          imagePullPolicy: Never
           livenessProbe:
             httpGet:
               path: /healthz
