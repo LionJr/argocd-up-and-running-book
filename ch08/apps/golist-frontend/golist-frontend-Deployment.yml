@@ -19,7 +19,8 @@ spec:
         app: golist-frontend
     spec:
       containers:
-        - image: quay.io/christianh814/golist-frontend:latest
+        - image: golist-frontend:local-arm64
+          imagePullPolicy: Never
           livenessProbe:
             httpGet:
               path: /
