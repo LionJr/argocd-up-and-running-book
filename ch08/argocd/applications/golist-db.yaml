@@ -13,8 +13,9 @@ spec:
           value: "golist"
         - name: auth.username
           value: "golist"
-        - name: auth.password
-          value: "golist"
+        # Provision this Secret separately; keep credentials stable across syncs.
+        - name: auth.existingSecret
+          value: "golist-db-credentials"
         - name: image.repository
           value: bitnamilegacy/mariadb
         - name: image.tag
